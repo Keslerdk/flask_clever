@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    <style lang="css">
+  #ex1Slider .slider-selection { background: #BABABA; }
+
+
+    </style>-->
+    <!-- Bootstrap CSS -->
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<h1>Hello, world!</h1>
+<!--<input id="ex1" data-slider-id='ex1Slider' type="range" data-slider-min="0" data-slider-max="20" data-slider-step="1"
+        data-slider-value="14"/>
+<input type="range" name="points" min="0" max="10">-->
+<input id="ex6" type="range" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
+<span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>
+    var slider = new Slider("#ex6");
+slider.on("slide", function(sliderValue) {
+	document.getElementById("ex6SliderVal").textContent = sliderValue;
+});
+
+</script>
+</body>
+</html>
